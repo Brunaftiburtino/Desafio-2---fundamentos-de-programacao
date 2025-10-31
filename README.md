@@ -1,12 +1,12 @@
 # Desafio-2---fundamentos-de-programacao
 Plataforma de apoio ao reforço escolar
 
-Alunos: Ana Beatriz de Oliveira
-        Bruna Ferreira
-        Drielly Santiago dos Santos
-        Elisa Martins
-        Hilton Resende
-        Maria Eduarda Vasconcelos 
+Alunos: Ana Beatriz de Oliveira;
+        Bruna Ferreira;
+        Drielly Santiago dos Santos;
+        Elisa Martins;
+        Hilton Resende;
+        Maria Eduarda Vasconcelos;
 
 Líder: Bruna Ferreira Tiburtino
 
