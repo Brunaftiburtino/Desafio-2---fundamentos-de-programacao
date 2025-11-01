@@ -20,7 +20,7 @@ def ler_todos(alunos):
         print("Nenhum aluno cadastrado.\n")
         return
 
-    print("\n📚 Lista de Alunos:")
+    print("\n Lista de Alunos:")
     for a in alunos:
         print(f"ID: {a['id']} | Nome: {a['nome']} | Matrícula: {a['matricula']}")
     print()
@@ -57,3 +57,4 @@ def deletar_aluno(alunos):
         print("Aluno não encontrado.\n")
     except ValueError:
         print("ID inválido.\n")
+
