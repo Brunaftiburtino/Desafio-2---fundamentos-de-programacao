@@ -1,5 +1,5 @@
 sessoes = []
-id_sessoes = 0
+id_sessoes = 1
 
 while True:
     print ("\n=== Menu de Sessão de Reforço Escolar ===")
@@ -76,4 +76,5 @@ while True:
 
     else:
         print ("Opção inválida, tente novamente.")
+
 
