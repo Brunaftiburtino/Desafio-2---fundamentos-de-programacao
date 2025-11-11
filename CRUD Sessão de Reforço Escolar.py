@@ -60,7 +60,7 @@ while True:
         else:
             print ("Sessão não encontrada")
 
-    elif opcao == "4":
+    elif opcao == 4:
         print ("\n=== Excluir Sessão ===")
         id_excluir = int(input("Digite o ID da sessão que deseja excluir: "))
         for s in sessoes:
