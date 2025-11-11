@@ -1,5 +1,21 @@
+import json
+import os
+
+ARQUIVO_SESSOES = 'sessoes.json'
+
+def ler_sessoes():
+    if not os.path.exists(ARQUIVO_SESSOES):
+        with open(ARQUIVO_SESSOES, 'w') as f:
+            json.dump([], f)
+    with open(ARQUIVO_SESSOES, 'r') as f:
+        return json.load(f)
+
+def salvar_sessoes(sessoes):
+    with open(ARQUIVO_SESSOES, 'w') as f:
+        json.dump(sessoes, f, indent=2)
+
 sessoes = []
-id_sessoes = 1
+
 
 while True:
     print ("\n=== Menu de Sessão de Reforço Escolar ===")
@@ -18,9 +34,10 @@ while True:
         professor = input ("Nome do Professor/Voluntário: ")
         materia = input ("Matéria: ")
         data = input("Data da Sessão (DD/MM/AAAA): ")
+        sessoes= ler_sessoes()
 
         sessao = {
-            "id": id_sessoes,
+            "id": int(len(sessoes)+1),
             "aluno": aluno,
             "professor": professor,
             "materia": materia,
@@ -28,20 +45,25 @@ while True:
         }
 
         sessoes.append(sessao)
-        id_sessoes += 1
-        print ("Sessão cadastrada com sucesso!")
+
+        salvar_sessoes(sessoes)
+
+        print("Sessão cadastrada com sucesso!")
 
     elif opcao == 2:
+        sessoes = ler_sessoes()
         print ("\n=== Lista de Sessões ===")
         if len(sessoes) == 0:
             print ("Nenhuma sessão cadastrada.")
         else:
+
             for s in sessoes:
                 print (f"ID: {s['id']} | Aluno: {s['aluno']} | Professor: {s['professor']} | Matéria: {s['materia']} | Data: {s['data']}")
 
     elif opcao == 3:
         print ("\n=== Atualizar Sessão ===")
         id_atualizar = int(input("Digite o ID da sessão que deseja atualizar: "))
+        sessoes = ler_sessoes()
         for s in sessoes: 
             if s["id"] == id_atualizar:
                 print ("Deixe em branco se não quiser alterar o campo.")
@@ -55,25 +77,27 @@ while True:
                 s["materia"] = nova_materia
                 s["data"] = nova_data
                 print ("Sessão atualizada com sucesso!")
+                salvar_sessoes(sessoes)
                 break
-        
         else:
             print ("Sessão não encontrada")
 
-    elif opcao == "4":
+    elif opcao == 4:
         print ("\n=== Excluir Sessão ===")
+        sessoes = ler_sessoes()
         id_excluir = int(input("Digite o ID da sessão que deseja excluir: "))
         for s in sessoes:
-            if s ["id"] == id_excluir:
+            if s["id"] == id_excluir:
                 sessoes.remove(s)
+                salvar_sessoes(sessoes)
                 print ("Sessão excluída com sucesso!")
-
+                break
         else:
-            print("Sessão não encontrada.")
+            print("Sessão não cadastrada")
 
     elif opcao == 5:
         print("Saindo...")
-
+        break
     else:
         print ("Opção inválida, tente novamente.")
 
