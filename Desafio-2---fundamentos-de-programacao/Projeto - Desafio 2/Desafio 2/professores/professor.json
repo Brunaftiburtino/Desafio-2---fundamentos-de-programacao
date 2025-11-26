@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "nome",
+        "matricula": 3354,
+        "disciplina": "disciplina"
+    },
+    {
+        "id": 2,
+        "nome": "Carlos",
+        "matricula": "123654",
+        "disciplina": "Português"
+    },
+    {
+        "id": 3,
+        "nome": "sdfg",
+        "matricula": 542,
+        "disciplina": "sdfg"
+    },
+    {
+        "id": 5,
+        "nome": "Bruna",
+        "matricula": 4634,
+        "disciplina": "Matemática"
+    }
+]

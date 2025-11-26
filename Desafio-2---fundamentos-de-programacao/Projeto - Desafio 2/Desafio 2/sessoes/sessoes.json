@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "aluno": "nami",
+    "professor": "nome",
+    "disciplina": "mat",
+    "data": "12/05/2007"
+  },
+  {
+    "id": 2,
+    "aluno": "nemo",
+    "professor": "cacilda",
+    "disciplina": "bio",
+    "data": "12/13/2334"
+  }
+]
