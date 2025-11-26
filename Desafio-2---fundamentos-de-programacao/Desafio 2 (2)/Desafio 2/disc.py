@@ -1,0 +1,5 @@
+DISCIPLINAS = [
+    "Português",
+    "Matemática",
+    "Inglês"
+]

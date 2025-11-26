@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "nome",
+        "matricula": 3354,
+        "disciplina": "disciplina"
+    },
+    {
+        "id": 2,
+        "nome": "Bruna",
+        "matricula": 5662,
+        "disciplina": "Ortopedia"
+    },
+    {
+        "id": 3,
+        "nome": "sdfg",
+        "matricula": 542,
+        "disciplina": "sdfg"
+    },
+    {
+        "id": 4,
+        "nome": "sdr",
+        "matricula": 542,
+        "disciplina": "sdf"
+    }
+]
