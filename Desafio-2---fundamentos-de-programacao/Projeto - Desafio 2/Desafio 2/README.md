@@ -12,7 +12,8 @@ Líder: Bruna Ferreira Tiburtino
 
 Desafio Escolhido: Desafio 2 == Plataforma de Apoio ao reforço escolar ==
 
-CRUD Alunos = Ana Beatriz
-CRUD Professores = Bruna, Fernando 
+CRUD Alunos = Ana Beatriz e Maria Eduarda;
+CRUD Professores = Bruna, Fernando e Elisa;
 CRUD Sessões de Reforço = Drielly e Hilton;
+
 Relatórios, integração dos CRUDs, Lista de disciplinas = Bruna 
