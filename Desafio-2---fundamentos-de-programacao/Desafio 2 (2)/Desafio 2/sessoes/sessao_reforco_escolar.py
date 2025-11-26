@@ -46,7 +46,7 @@ def exibir_menu_reforco():
             "id": int(len(sessoes)+1),
             "aluno": aluno,
             "professor": professor,
-            "materia": materia,
+            "disciplina": disciplina,
             "data": data
         }
 
@@ -64,7 +64,7 @@ def exibir_menu_reforco():
         else:
 
             for s in sessoes:
-                print (f"ID: {s['id']} | Aluno: {s['aluno']} | Professor: {s['professor']} | Matéria: {s['materia']} | Data: {s['data']}")
+                print (f"ID: {s['id']} | Aluno: {s['aluno']} | Professor: {s['professor']} | Disciplina: {s['disciplina']} | Data: {s['data']}")
 
     elif opcao == 3:
         print ("\n=== Atualizar Sessão ===")
@@ -75,12 +75,12 @@ def exibir_menu_reforco():
                 print ("Deixe em branco se não quiser alterar o campo.")
                 novo_aluno = input(f"Novo nome do aluno ({s['aluno']}): ") or s["aluno"]
                 novo_professor = input(f"Novo professor ({s['professor']}): ") or s["professor"]
-                nova_materia = input(f"Nova matéria ({s['materia']}): ") or s["materia"]
+                nova_disciplina = input(f"Nova disciplina ({s['disciplina']}): ") or s["disciplina"]
                 nova_data = input(f"Nova data ({s['data']}): ") or s["data"]
 
                 s["aluno"] = novo_aluno
                 s["professor"] = novo_professor
-                s["materia"] = nova_materia
+                s["disciplina"] = nova_disciplina
                 s["data"] = nova_data
                 print ("Sessão atualizada com sucesso!")
                 salvar_sessoes(sessoes)
@@ -108,4 +108,5 @@ def exibir_menu_reforco():
         print ("Opção inválida, tente novamente.")
 
 if __name__ == "__main__":
+
    exibir_menu_reforco()        
