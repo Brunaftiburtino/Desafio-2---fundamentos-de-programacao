@@ -4,8 +4,9 @@ def criar_aluno(alunos):
     nome = input("Nome do aluno: ")
     matricula = input("Número da matrícula: ")
 
+    novo_id = (max([a["id"] for a in alunos]) + 1) if alunos else 1
     aluno = {
-        "id": len(alunos) + 1,
+        "id": novo_id,
         "nome": nome,
         "matricula": matricula
     }
@@ -32,7 +33,7 @@ def atualizar_aluno(alunos):
         id_aluno = int(input("Digite o ID do aluno que deseja atualizar: "))
         for a in alunos:
             if a["id"] == id_aluno:
-                print(f"Editando: {a['nome']}")
+                print(f"Deixe vazio se quiser manter o valor atual. ")
                 a["nome"] = input("Novo nome: ") or a["nome"]
                 a["matricula"] = input("Nova matrícula: ") or a["matricula"]
 
@@ -57,3 +58,4 @@ def deletar_aluno(alunos):
         print("Aluno não encontrado.\n")
     except ValueError:
         print("ID inválido.\n")
+
