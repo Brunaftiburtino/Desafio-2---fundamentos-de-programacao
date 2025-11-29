@@ -92,8 +92,9 @@ def exibir_menu_reforco():
            
             sessoes = ler_sessoes()
 
+            novo_id = (max([s["id"] for s in sessoes]) + 1) if sessoes else 1
             nova_sessao = {
-                "id": len(sessoes) + 1,
+                "id": novo_id,
                 "aluno": aluno_encontrado["nome"],
                 "professor": professor_encontrado["nome"],
                 "disciplina": disciplina_escolhida,
@@ -171,3 +172,4 @@ def exibir_menu_reforco():
 
 if __name__ == "__main__":
     exibir_menu_reforco()
+
