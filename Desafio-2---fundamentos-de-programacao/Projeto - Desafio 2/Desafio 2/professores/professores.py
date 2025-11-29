@@ -13,9 +13,9 @@ def cadastrar_professor(professores):
     opc_disc = int(input("Digite o número da disciplina: "))    
     disciplina = DISCIPLINAS[opc_disc - 1]
 
-
+    novo_id = (max([p["id"] for p in professores]) + 1) if professores else 1
     novo_professor = {
-        "id": len(professores) + 1,
+        "id": novo_id,
         "nome": nome,
         "matricula": matricula,
         "disciplina": disciplina
@@ -44,7 +44,7 @@ def atualizar_professor(professores):
 
         for p in professores:
             if p["id"] == id_professor:
-                print(f"Editando: {p['nome']}")
+                print(f"Deixe vazio se quiser manter o valor atual. ")
 
                 novo_nome = input("Novo nome: ")
                 nova_matricula = input("Nova matrícula: ")
@@ -92,4 +92,5 @@ def deletar_professor(professores):
 
     except ValueError:
         print("ID inválido!\n")
+
 
