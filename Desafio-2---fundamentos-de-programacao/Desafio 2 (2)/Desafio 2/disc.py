@@ -1,5 +1,0 @@
-DISCIPLINAS = [
-    "Português",
-    "Matemática",
-    "Inglês"
-]

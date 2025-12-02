@@ -17,3 +17,5 @@ CRUD Professores = Bruna, Fernando e Elisa;
 CRUD Sessões de Reforço = Drielly e Hilton;
 
 Relatórios, integração dos CRUDs, Lista de disciplinas = Bruna 
+
+
