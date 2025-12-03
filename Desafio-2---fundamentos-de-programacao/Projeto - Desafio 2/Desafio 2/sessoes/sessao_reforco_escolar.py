@@ -25,13 +25,13 @@ def salvar_sessoes(sessoes):
 def exibir_menu_reforco():
 
     while True:
-        print("\n=== Menu de Sessão de Reforço Escolar ===")
+        print("\n=== Menu de Sessão de Reforço Escolar ===\n")
         print("1 - Cadastrar Sessão")
         print("2 - Listar Sessões")
         print("3 - Atualizar Sessão")
         print("4 - Excluir Sessão")
         print("5 - Voltar ao Menu Principal")
-        print("============================================")
+        print("\n============================================\n")
 
         opcao = int(input("Escolha uma opção: "))
 
@@ -172,4 +172,5 @@ def exibir_menu_reforco():
 
 if __name__ == "__main__":
     exibir_menu_reforco()
+
 
