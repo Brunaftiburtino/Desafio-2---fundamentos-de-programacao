@@ -7,13 +7,13 @@ from relatorios.menu_relatórios import exibir_menu_relatorios
 
 def menuPrincipal():
     while True:
-        print("====== Menu Principal ======")
+        print("====== Menu Principal ======\n")
         print("1. Menu Professores/Voluntários ")
         print("2. Menu Alunos ")
         print("3. Menu Sessões de Reforço ")
         print("4. Relatórios ")
         print("5. Sair")
-        print("==============================")
+        print("\n==============================\n")
 
 
         opcao = int(input("Informe a opção desejada: "))
@@ -38,3 +38,4 @@ menuPrincipal()
 
 
     
+
