@@ -5,13 +5,13 @@ def exibir_menu_alunos():
     alunos = carregar_dados()
 
     while True:
-        print("========== MENU – GERENCIADOR DE ALUNOS ==========")
+        print("========== MENU – GERENCIADOR DE ALUNOS ==========\n")
         print("1. Cadastrar novo aluno")
         print("2. Ler todos os alunos")
         print("3. Atualizar aluno")
         print("4. Excluir aluno")
         print("5.Voltar ao menu principal")
-        print("===================================================")
+        print("\n===================================================\n")
 
         opcao = input("Escolha uma opção: ")
 
@@ -31,3 +31,4 @@ def exibir_menu_alunos():
 
 if __name__ == "__main__":
     exibir_menu_alunos()
+
