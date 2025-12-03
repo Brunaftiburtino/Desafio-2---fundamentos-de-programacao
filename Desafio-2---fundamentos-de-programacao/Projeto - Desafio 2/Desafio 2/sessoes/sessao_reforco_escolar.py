@@ -13,12 +13,12 @@ def ler_sessoes():
     if not os.path.exists(ARQUIVO_SESSOES):
         with open(ARQUIVO_SESSOES, 'w') as f:
             json.dump([], f)
-    with open(ARQUIVO_SESSOES, 'r') as f:
+    with open(ARQUIVO_SESSOES, 'r', encoding= "utf-8") as f:
         return json.load(f)
 
 def salvar_sessoes(sessoes):
-    with open(ARQUIVO_SESSOES, 'w') as f:
-        json.dump(sessoes, f, indent=2)
+    with open(ARQUIVO_SESSOES, 'w', encoding= "utf-8") as f:
+        json.dump(sessoes, f, indent=4, ensure_ascii= False)
 
 
 
@@ -172,5 +172,6 @@ def exibir_menu_reforco():
 
 if __name__ == "__main__":
     exibir_menu_reforco()
+
 
 
