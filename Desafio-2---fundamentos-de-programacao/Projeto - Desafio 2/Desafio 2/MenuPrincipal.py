@@ -6,7 +6,6 @@ from relatorios.menu_relatórios import exibir_menu_relatorios
 
 
 def menuPrincipal():
-    opcao = 0
     while True:
         print("====== Menu Principal ======")
         print("1. Menu Professores/Voluntários ")
@@ -35,6 +34,7 @@ def menuPrincipal():
 
 
 menuPrincipal()       
+
 
 
     
