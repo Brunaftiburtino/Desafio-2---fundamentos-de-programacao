@@ -3,7 +3,7 @@ from relatorios.gerar_relatorios import relatorio_total_professores, relatorio_p
 
 def exibir_menu_relatorios():
     while True:
-        print("\n======= MENU DE RELATÓRIOS =======")
+        print("\n======= MENU DE RELATÓRIOS =======\n")
         print("1. Total de Professores")
         print("2. Professores por Disciplina")
         print("3. Total de Alunos")
@@ -13,7 +13,7 @@ def exibir_menu_relatorios():
         print("7. Sessões por Disciplina")
         print("8. Sessões por Aluno")
         print("9. Voltar ao Menu Principal")
-        print("===================================")
+        print("\n===================================\n")
 
         opcao = input("Escolha uma opção: ")
 
@@ -40,4 +40,5 @@ def exibir_menu_relatorios():
             print("Opção inválida!\n")
 
 if __name__ == "__main__":
+
     exibir_menu_relatorios()
