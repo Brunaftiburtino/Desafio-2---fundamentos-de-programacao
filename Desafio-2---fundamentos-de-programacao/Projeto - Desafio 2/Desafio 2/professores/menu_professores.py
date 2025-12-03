@@ -12,7 +12,7 @@ def exibir_menu_professores():
         print("3. Atualizar professor/voluntário")
         print("4. Excluir professor/voluntário")
         print("5. Voltar ao Menu Principal")
-        print("================================")
+        print("\n================================\n")
 
         escolha = int(input("Escolha uma opção: "))
 
@@ -38,3 +38,4 @@ def exibir_menu_professores():
 
 if __name__ == "__main__":
     exibir_menu_professores()
+
